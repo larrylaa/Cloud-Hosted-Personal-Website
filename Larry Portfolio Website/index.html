@@ -139,7 +139,9 @@
 
             <div class="home__data">
               <h1 class="home__title">Greetings, I'm Larry</h1>
-              <h3 class="home__subtitle">Aspiring Software Engineer</h3>
+              <h3 class="home__subtitle"> Aspiring
+                <span class="typed-text-color" id="typed-output"><span id="typed-cursor"></span></span>
+              </h3>
               <p class="home__description">
                 First Year Student @ Cal Poly Pomona Studying Computer Science,
                 Seeking Summer 2024 Internship Opportunities.
@@ -226,5 +228,28 @@
 
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
+
+    <!--==================== TYPED JS ANIMATIONS ====================-->
+<!-- TypedJS Library Import -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<!-- Initialize Typed.js for the h3 element -->
+<script>
+  // Function to initialize Typed.js
+  function initializeTypedJS() {
+    const subtitleElement = document.querySelector('#typed-output');
+    const cursorElement = document.querySelector('#typed-cursor');
+    const typed = new Typed(subtitleElement, {
+      strings: ["Placeholder","Software Engineer", "Cloud Professional", "Web Developer"],
+      typeSpeed: 100,
+      backSpeed: 100, 
+      startDelay: 1000,
+      backDelay: 2000,
+      loop: true,
+    });
+  }
+  initializeTypedJS();
+</script>
+
   </body>
 </html>

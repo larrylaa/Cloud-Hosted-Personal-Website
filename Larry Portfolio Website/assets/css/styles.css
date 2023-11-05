@@ -242,6 +242,14 @@ img {
 /* Change background header */
 
 /*==================== HOME ====================*/
+.typed-text-color {
+  color: var(--first-color-second);
+}
+
+.typed-cursor {
+  color: var(--first-color-second);
+}
+
 .home__container {
   gap: 1rem;
 }
