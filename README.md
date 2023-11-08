@@ -1,5 +1,6 @@
 # Cloud-Portfolio-Website
 My take on the Cloud Resume Challenge (AWS Version), is currently a work in progress.
+<br>
 To Do:
 1. Certification; AWS Certified Cloud Practitioner ✅
 2. HTML/CSS/JS Webpage Layout ✅
