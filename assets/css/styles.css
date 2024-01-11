@@ -353,6 +353,7 @@ img {
 /*========== Visits Counter ==========*/
 .visit__counter {
   margin-top: var(--mb-0-5);
+  font-weight: var(--font-semi-bold);
 }
 
 /*==================== BUTTONS ====================*/
