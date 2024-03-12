@@ -142,3 +142,15 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+/*==================== GRAB VISITOR COUNT FROM LAMBDA ====================*/
+const visits = document.querySelector("#counterValue");
+
+// AWS LINK is a secret
+async function updateVisits() {
+  let response = await fetch("AWSLINK/addvisit", {method: 'POST'});
+  let data = await response.json();
+  visits.innerHTML = data.visits;
+}
+
+updateVisits();
