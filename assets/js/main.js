@@ -148,15 +148,13 @@ const visits = document.querySelector("#counterValue");
 
 // AWS LINK is a secret
 async function updateVisits() {
-  let response = await fetch("AWSLINK/addvisit", {method: 'POST'});
+  let response = await fetch("SECRET/addvisit", {method: 'POST'});
   let data = await response.json();
   visits.innerHTML = data.visits;
 }
 
-updateVisits();
-
 /*==================== FORM SUBMISSION AND EMAIL ME LOGIC ====================*/
-function submitForm() {
+async function submitForm() {
   const nameInput = document.getElementById("nameInput").value;
   const emailInput = document.getElementById("emailInput").value;
   const companyInput = document.getElementById("companyInput").value;
@@ -165,8 +163,6 @@ function submitForm() {
   if (nameInput.trim() !== "" && emailInput.trim() !== "" && companyInput.trim() !== "" && messageInput.trim() !== "") {
 
       const emailTemplate = `
-      Subject: New Contact Form Submission
-
       You have received a new contact form submission from your website. Below are the details:
 
       Name: ${nameInput}
@@ -175,8 +171,7 @@ function submitForm() {
       Message: ${messageInput}
       `;
 
-      // TODO: here, call an AWS lambda for SES to email myself.
-      console.log(emailTemplate);
+      await sendEmail(emailTemplate);
 
       document.getElementById("contactForm").reset();
 
@@ -194,3 +189,28 @@ function submitForm() {
       }, 3000);
   }
 }
+
+async function sendEmail(message) {
+  const requestBody = {
+    Message: message 
+  };
+
+  try {
+    let response = await fetch("SECRET/sendemail", {
+      mode: 'no-cors',
+      method: 'POST',
+      body: JSON.stringify(requestBody), 
+      headers: {
+        'Content-Type': 'application/json'
+      },
+    });
+
+    let data = await response.json(); 
+    return data;
+  } catch (error) {
+    return null;
+  }
+}
+
+
+updateVisits();
