@@ -377,6 +377,16 @@
                                 <span class="skills__percentage skills__js"></span>
                               </div>
                             </div>
+
+                            <div class="skills__data">
+                              <div class="skills__titles">
+                                <h3 class="skills__name">React</h3>
+                                <span class="skills_number">40%</span>
+                              </div>
+                              <div class="skills__bar">
+                                <span class="skills__percentage skills__"></span>
+                              </div>
+                            </div>
                   </div>
                 </div>
 
@@ -471,7 +481,7 @@
     
                           <div class="skills__data">
                             <div class="skills__titles">
-                              <h3 class="skills__name">Terraform</h3>
+                              <h3 class="skills__name">ExpressJS</h3>
                               <span class="skills_number">70%</span>
                             </div>
     
@@ -483,8 +493,8 @@
 
                                 <div class="skills__data">
                                   <div class="skills__titles">
-                                    <h3 class="skills__name">ExpressJS</h3>
-                                    <span class="skills_number">60%</span>
+                                    <h3 class="skills__name">Terraform</h3>
+                                    <span class="skills_number">40%</span>
                                   </div>
                                   <div class="skills__bar">
                                     <span class="skills__percentage skills__expressjs"></span>
@@ -635,33 +645,34 @@
           </div>
         </div>
 
-        <form action="#home" id="contactForm" class="contact__form grid">
+        <form id="contactForm" class="contact__form grid">
           <div class="contact__inputs grid">
             <div class="contact__content">
-              <label for="" class="contact__label">Name</label>
-              <input type="text" class="contact__input" required/>
+              <label for="nameInput" class="contact__label">Name</label>
+              <input type="text" class="contact__input" id="nameInput" required/>
             </div>
             <div class="contact__content">
-              <label for="" class="contact__label">Email</label>
-              <input type="email" class="contact__input" required/>
+              <label for="emailInput" class="contact__label">Email</label>
+              <input type="email" class="contact__input" id="emailInput" required/>
             </div>
           </div>
           <div class="contact__content">
-            <label for="" class="contact__label">Company</label>
-            <input type="text" class="contact__input" required/>
+            <label for="companyInput" class="contact__label">Company</label>
+            <input type="text" class="contact__input" id="companyInput" required/>
           </div>
           <div class="contact__content">
-            <label for="" class="contact__label">Message <br>Note: Currently Not Working, Please Contact Via Email </label>
-            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+            <label for="messageInput" class="contact__label">Message <br></label>
+            <textarea name="message" id="messageInput" cols="30" rows="10" class="contact__input"></textarea>
           </div>
-      
+        
           <div>
-            <button type="submit" class="button button--flex">
+            <button type="button" class="button button--flex" onclick="submitForm()">
               Send Message
               <i class="uil uil-message button__icon"></i>
             </button>
           </div>
         </form>
+        
       </div>
 
     </section>
@@ -669,6 +680,12 @@
 
   <br>
 
+
+    <!--==================== MODAL CONFIRMATION FORM ====================-->
+    <div id="thankYouMessage" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(0, 0, 0, 0.5); padding: 20px; color: white; text-align: center; opacity: 0; transition: opacity 1s ease-in-out;">
+      Thank you for your submission!
+    </div>
+    
     <!--==================== FOOTER ====================-->
     <footer class="footer">
       <div class="footer__bg">
@@ -751,5 +768,5 @@
   initializeTypedJS();
 </script>
 
-  </body>
+</body>
 </html>

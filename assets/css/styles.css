@@ -475,6 +475,10 @@ img {
   width: 70%;
 }
 
+.skills__react {
+  width: 40%;
+}
+
 .skills__python {
   width: 85%;
 }
@@ -484,7 +488,7 @@ img {
 }
 
 .skills__expressjs {
-  width: 60%;
+  width: 40%;
 }
 
 .skills__terraform {

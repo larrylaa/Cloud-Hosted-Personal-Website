@@ -154,3 +154,43 @@ async function updateVisits() {
 }
 
 updateVisits();
+
+/*==================== FORM SUBMISSION AND EMAIL ME LOGIC ====================*/
+function submitForm() {
+  const nameInput = document.getElementById("nameInput").value;
+  const emailInput = document.getElementById("emailInput").value;
+  const companyInput = document.getElementById("companyInput").value;
+  const messageInput = document.getElementById("messageInput").value;
+
+  if (nameInput.trim() !== "" && emailInput.trim() !== "" && companyInput.trim() !== "" && messageInput.trim() !== "") {
+
+      const emailTemplate = `
+      Subject: New Contact Form Submission
+
+      You have received a new contact form submission from your website. Below are the details:
+
+      Name: ${nameInput}
+      Email: ${emailInput}
+      Company: ${companyInput}
+      Message: ${messageInput}
+      `;
+
+      // TODO: here, call an AWS lambda for SES to email myself.
+      console.log(emailTemplate);
+
+      document.getElementById("contactForm").reset();
+
+      const modal = document.getElementById("thankYouMessage");
+      modal.style.display = "block";
+      setTimeout(function() {
+      modal.style.opacity = "1";
+      }, 100);
+
+      setTimeout(function() {
+      modal.style.opacity = "0";
+      setTimeout(function() {
+        modal.style.display = "none";
+      }, 1000); 
+      }, 3000);
+  }
+}
