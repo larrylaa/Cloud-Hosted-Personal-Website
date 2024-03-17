@@ -148,9 +148,13 @@ const visits = document.querySelector("#counterValue");
 
 // AWS LINK is a secret
 async function updateVisits() {
-  let response = await fetch("SECRET/addvisit", {method: 'POST'});
-  let data = await response.json();
-  visits.innerHTML = data.visits;
+  try {
+    let response = await fetch("https://ajvqwe6fc3.execute-api.us-east-1.amazonaws.com/addvisit", {method: 'POST'});
+    let data = await response.json();
+    visits.innerHTML = data.visits;
+  } catch (error) {
+    return error
+  }
 }
 
 /*==================== FORM SUBMISSION AND EMAIL ME LOGIC ====================*/
@@ -196,7 +200,7 @@ async function sendEmail(message) {
   };
 
   try {
-    let response = await fetch("SECRET/sendemail", {
+    let response = await fetch("https://ajvqwe6fc3.execute-api.us-east-1.amazonaws.com/sendemail", {
       mode: 'no-cors',
       method: 'POST',
       body: JSON.stringify(requestBody), 
@@ -208,7 +212,7 @@ async function sendEmail(message) {
     let data = await response.json(); 
     return data;
   } catch (error) {
-    return null;
+    return error;
   }
 }
 
