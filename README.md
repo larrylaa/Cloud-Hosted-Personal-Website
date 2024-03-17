@@ -1,12 +1,10 @@
 # Cloud-Hosted Personal Website 
 Welcome to my Cloud-Hosted Personal Website Project! This repository houses the code for my personal website, developed as part of the Cloud Resume Challenge. Through this project, I've utilized various cloud services and technologies to build an interactive and dynamic portfolio showcasing my skills, experience, and projects.
 
-## Cloud Architecture Diagram:
+## Cloud Architecture Diagram
 
-## Tech Stack:
-
+## Tech Stack
 - **Languages:** JavaScript, HTML, CSS
-  
 - **AWS Services:**
   - AWS Route 53: Website domain registration and DNS management.
   - AWS Certificate Manager: Website SSL certificate provisioning and management.
@@ -15,12 +13,11 @@ Welcome to my Cloud-Hosted Personal Website Project! This repository houses the 
   - AWS SES (Simple Email Service): For automatic emailing to my inbox triggered by website contact form submission.
   - AWS Lambda (Python SDK; Boto3): Serverless functions written using the AWS Python SDK for emailing on form submission, incrementing, and fetching visits.
   - AWS API Gateway: For creating, publishing, maintaining, monitoring, and securing REST APIs that trigger lambda functions.
-    
 - **DevOps Tooling:**
   - GitHub Actions: CI/CD pipelines for automating S3 deployments for the frontend, and terraform deployments for the backend. (NOTE: IN PROGRESS)
   - Terraform: Infrastructure as code for provisioning and managing AWS resources on the backend. (NOTE: IN PROGRESS)
 
-## Credits:
+## Credits
 This project was inspired by the Cloud Resume Challenge, an initiative created by [Forrest Brazeal](https://forrestbrazeal.com/) and documented at [cloudresumechallenge.dev](https://cloudresumechallenge.dev/). The challenge aims to help individuals demonstrate their cloud computing and DevOps skills through practical projects. I would like to extend my gratitude to Forrest Brazeal for creating this challenge and providing valuable resources to the community.
 
 ## License
