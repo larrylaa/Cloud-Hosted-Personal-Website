@@ -5,7 +5,7 @@ Welcome to my Cloud-Hosted Personal Website Project! This repository houses the 
 You can explore the live version of this portfolio website [here!](https://larryla.me/)
 
 ## Cloud Architecture Diagram
-
+![Cloud Resume Challenge Diagram](https://github.com/larrylaa/Cloud-Hosted-Personal-Website/assets/137100338/0c8baa46-2464-49cd-a8b5-dc43278d4f12)
 
 ## Tech Stack
 - **Languages:**
