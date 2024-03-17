@@ -4,7 +4,10 @@ Welcome to my Cloud-Hosted Personal Website Project! This repository houses the 
 ## Cloud Architecture Diagram
 
 ## Tech Stack
-- **Languages:** JavaScript, HTML, CSS
+- **Languages:**
+  - Javascript
+  - HTML/CSS
+    
 - **AWS Services:**
   - AWS Route 53: Website domain registration and DNS management.
   - AWS Certificate Manager: Website SSL certificate provisioning and management.
@@ -13,6 +16,7 @@ Welcome to my Cloud-Hosted Personal Website Project! This repository houses the 
   - AWS SES (Simple Email Service): For automatic emailing to my inbox triggered by website contact form submission.
   - AWS Lambda (Python SDK; Boto3): Serverless functions written using the AWS Python SDK for emailing on form submission, incrementing, and fetching visits.
   - AWS API Gateway: For creating, publishing, maintaining, monitoring, and securing REST APIs that trigger lambda functions.
+    
 - **DevOps Tooling:**
   - GitHub Actions: CI/CD pipelines for automating S3 deployments for the frontend, and terraform deployments for the backend. (NOTE: IN PROGRESS)
   - Terraform: Infrastructure as code for provisioning and managing AWS resources on the backend. (NOTE: IN PROGRESS)
