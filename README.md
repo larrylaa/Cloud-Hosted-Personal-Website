@@ -1,5 +1,4 @@
 # Cloud-Hosted Personal Website 
-
 Welcome to my Cloud-Hosted Personal Website Project! This repository houses the code for my personal website, developed as part of the Cloud Resume Challenge. Through this project, I've utilized various cloud services and technologies to build an interactive and dynamic portfolio showcasing my skills, experience, and projects.
 
 ## Cloud Architecture Diagram:
