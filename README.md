@@ -20,7 +20,7 @@ You can explore the live version of this portfolio website [here!](https://larry
   - AWS Lambda (Python SDK; Boto3): Serverless functions written using the AWS Python SDK for emailing on form submission, incrementing, and fetching visits.
   - AWS API Gateway: For creating, publishing, maintaining, monitoring, and securing REST APIs that trigger lambda functions.
 - **DevOps Tooling:**
-  - GitHub Actions: CI/CD pipelines for automating S3 deployments for the frontend, and terraform deployments for the backend. 
+  - GitHub Actions: CI/CD pipelines for automating S3 deployments for the frontend.
   - Terraform: Infrastructure as code for provisioning and managing AWS resources on the backend. (NOTE: IN PROGRESS)
     
 ## Credits
