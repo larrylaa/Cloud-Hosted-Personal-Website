@@ -1,7 +1,11 @@
 # Cloud-Hosted Personal Website 
 Welcome to my Cloud-Hosted Personal Website Project! This repository houses the code for my personal website, developed as part of the Cloud Resume Challenge. Through this project, I've utilized various cloud services and technologies to build an interactive and dynamic portfolio showcasing my skills, experience, and projects.
 
+## Live Website:
+You can explore the live version of this portfolio website [here!](https://larryla.me/)
+
 ## Cloud Architecture Diagram
+
 
 ## Tech Stack
 - **Languages:**
@@ -18,7 +22,7 @@ Welcome to my Cloud-Hosted Personal Website Project! This repository houses the 
 - **DevOps Tooling:**
   - GitHub Actions: CI/CD pipelines for automating S3 deployments for the frontend, and terraform deployments for the backend. (NOTE: IN PROGRESS)
   - Terraform: Infrastructure as code for provisioning and managing AWS resources on the backend. (NOTE: IN PROGRESS)
-
+    
 ## Credits
 This project was inspired by the Cloud Resume Challenge, an initiative created by [Forrest Brazeal](https://forrestbrazeal.com/) and documented at [cloudresumechallenge.dev](https://cloudresumechallenge.dev/). The challenge aims to help individuals demonstrate their cloud computing and DevOps skills through practical projects. I would like to extend my gratitude to Forrest Brazeal for creating this challenge and providing valuable resources to the community.
 
