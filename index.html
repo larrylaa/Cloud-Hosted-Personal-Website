@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -156,8 +157,8 @@
                 <span class="typed-text-color" id="typed-output"><span id="typed-cursor"></span></span>
               </h3>
               <p class="home__description">
-                Sophomore @ Cal Poly Pomona Studying Computer Science,
-                Seeking Summer 2025 Internship Opportunities.
+                Junior @ Cal Poly Pomona Studying Computer Science,
+                Seeking Summer 2026 Internship Opportunities.
               </p>
 
               <a href="#contact" class="button button--flex">
@@ -198,14 +199,13 @@
 
           <div class="about__data">
             <p class="about__description">
-              I'm a motivated college sophomore pursuing a Computer Science
-              degree, backed by a internship experiences in software engineering
+              I'm a motivated college junior pursuing a Computer Science
+              degree, backed by multiple internship experiences in software engineering
               and information technology. I have a strong interest in cloud technologies
               and have gained knowledge of AWS through internships, personal projects, and certifications.
               My goal is to further cultivate my skills
               in hands-on environments where I can make meaningful contributions.
-              At the moment, I am particularly interested in software engineering, backend web
-              development or devops/sysadmin adjacent roles. 
+              At the moment, I am particularly interested in full-stack software engineering, and cloud roles. 
             </p>
 
             <div class="about__buttons">
@@ -328,7 +328,25 @@
                         <!--=============== WORK EXPERIENCE SECTION ===============-->
                         <div class="qualification__content qualification__active" data-content id="work">
                             <!--=============== QUALIFICATION 1 ===============-->
-                        <!--=============== Work 0 (CURRENT)===============-->
+
+                           <!--=============== Work  1 (Current)===============-->
+                          <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Software Engineer Intern</h3>
+                                <span class="qualification__subtitle">State Farm Insurance (Innovation Group) - Remote</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    May 2025 - Present
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!--=============== Work 1===============-->
                         <div class="qualification__data">                                 
                           <div></div>
 
@@ -342,12 +360,12 @@
                               <span class="qualification__subtitle">Cal Poly Pomona IT - Remote</span>
                               <div class="qualification__calendar">
                                   <i class="uil uil-calendar-alt"></i>
-                                  Aug 2024 - Present
+                                  Aug 2024 - May 2025
                               </div>
                           </div>
                       </div>
 
-                          <!--=============== Work  1 ===============-->
+                          <!--=============== Work  2 ===============-->
                           <div class="qualification__data">
                             <div>
                                 <h3 class="qualification__title">Software Engineer Intern (IT)</h3>
@@ -366,7 +384,7 @@
 
 
   
-                        <!--=============== Work 2 ===============-->
+                        <!--=============== Work 3 ===============-->
                         <div class="qualification__data">                                 
                             <div></div>
 
@@ -387,7 +405,7 @@
 
                         
 
-                        <!--=============== Work 3 ===============-->
+                        <!--=============== Work 4 ===============-->
                         <div class="qualification__data">
                             <div>
                                 <h3 class="qualification__title">Software Engineer Intern</h3>
@@ -415,183 +433,205 @@
       <br>
       <br>
 
-      <!--==================== SKILLS ====================-->
-      <section class="skills section" id="skills">
-        <h2 class="section__title">Skills</h2>
-        <span class="section__subtitle">My Technical Skill Level</span>
+<!--==================== SKILLS ====================-->
+<section class="skills section" id="skills">
+  <h2 class="section__title" style="text-align: center;">Skills</h2>
+  <span class="section__subtitle" style="display: block; text-align: center;">My Technical Skills</span>
 
-        <div class="skills__container container grid">
-          <div>
-            <!--==================== SKILLS 1 ====================-->
-            <div class="skills__content skills__open">
-              <div class="skills__header">
-                <i class="uil uil-brackets-curly skills__icon"></i>
+  <div class="skills__container container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; max-width: 1000px; margin: 0 auto;">
 
-                <div>
-                  <h1 class="skills__title">Frontend</h1>
-                </div>
+    <!-- Utility class for boxed sections -->
+    <style>
+      .skills__content {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 1.5rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        background-color: #fff;
+      }
+      .skills__title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-left: 0.5rem;
+      }
+    </style>
 
-                <i class="uil uil-angle-down skills__arrow"></i>
-              </div>
+    <!-- Frontend Skills -->
+    <div class="skills__content" style="flex: 1 1 calc(50% - 2rem);">
+      <div class="skills__header" style="display: flex; justify-content: center; align-items: center; margin-bottom: 1rem;">
+        <i class="uil uil-brackets-curly skills__icon"></i>
+        <div class="skills__title">Frontend</div>
+      </div>
+      <div class="skills__logos" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 1.5rem;">
+        <!-- Icons and labels -->
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <i class="devicon-html5-plain colored" style="font-size: 2.5rem;"></i>
+          <span>HTML5</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <i class="devicon-css3-plain colored" style="font-size: 2.5rem;"></i>
+          <span>CSS3</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <i class="devicon-javascript-plain colored" style="font-size: 2.5rem;"></i>
+          <span>JavaScript</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <i class="devicon-react-original colored" style="font-size: 2.5rem;"></i>
+          <span>React</span>
+        </div>
+      </div>
+    </div>
 
-              <div class="skills__list grid">
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">HTML</h3>
-                    <span class="skills_number">85%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__html"></span>
-                    </div>
-                  </div>
+    <!-- Backend Skills -->
+    <div class="skills__content" style="flex: 1 1 calc(50% - 2rem);">
+      <div class="skills__header" style="display: flex; justify-content: center; align-items: center; margin-bottom: 1rem;">
+        <i class="uil uil-server-network skills__icon"></i>
+        <div class="skills__title">Backend</div>
+      </div>
+      <div class="skills__logos" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 1.5rem;">
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <i class="devicon-nodejs-plain colored" style="font-size: 2.5rem;"></i>
+          <span>Node.js</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <i class="devicon-express-original colored" style="font-size: 2.5rem;"></i>
+          <span>Express.js</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <i class="devicon-django-plain colored" style="font-size: 2.5rem;"></i>
+          <span>Django</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <i class="devicon-python-plain colored" style="font-size: 2.5rem;"></i>
+          <span>Python</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <i class="devicon-java-plain colored" style="font-size: 2.5rem;"></i>
+          <span>Java</span>
+        </div>
+      </div>
+    </div>
 
-                      <div class="skills__data">
-                        <div class="skills__titles">
-                          <h3 class="skills__name">CSS</h3>
-                          <span class="skills_number">75%</span>
-                        </div>
+    <!-- Testing Frameworks -->
+    <div class="skills__content" style="flex: 1 1 calc(50% - 2rem);">
+      <div class="skills__header" style="display: flex; justify-content: center; align-items: center; margin-bottom: 1rem;">
+        <i class="uil uil-check-circle skills__icon"></i>
+        <div class="skills__title">Testing</div>
+      </div>
+      <div class="skills__logos" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 1.5rem;">
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <i class="devicon-vitest-plain colored" style="font-size: 2.5rem;"></i>
+          <span>Vitest</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <i class="devicon-jest-plain colored" style="font-size: 2.5rem;"></i>
+          <span>Jest</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <i class="devicon-pytest-plain colored" style="font-size: 2.5rem;"></i>
+          <span>PyTest</span>
+        </div>
+      </div>
+    </div>
 
-                        <div class="skills__bar">
-                          <span class="skills__percentage skills__css"></span>
-                        </div>
-                      </div>
+    <!-- Cloud & DevOps -->
+    <div class="skills__content" style="flex: 1 1 calc(50% - 2rem);">
+      <div class="skills__header" style="display: flex; justify-content: center; align-items: center; margin-bottom: 1rem;">
+        <i class="uil uil-cloud skills__icon"></i>
+        <div class="skills__title">Cloud & DevOps</div>
+      </div>
+      <div class="skills__logos" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 1.5rem;">
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <i class="devicon-amazonwebservices-plain-wordmark colored" style="font-size: 2.5rem;"></i>
+          <span>AWS</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <i class="devicon-azure-plain colored" style="font-size: 2.5rem;"></i>
+          <span>Azure</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <i class="devicon-terraform-plain colored" style="font-size: 2.5rem;"></i>
+          <span>Terraform</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <i class="devicon-docker-plain colored" style="font-size: 2.5rem;"></i>
+          <span>Docker</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <i class="devicon-github-original colored" style="font-size: 2.5rem;"></i>
+          <span>GitHub Actions</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <i class="devicon-gitlab-plain colored" style="font-size: 2.5rem;"></i>
+          <span>GitLab CI/CD</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <i class="devicon-amazonwebservices-original colored" style="font-size: 2.5rem;"></i>
+          <span>AWS SAM</span>
+        </div>
+      </div>
+    </div>
 
-                            <div class="skills__data">
-                              <div class="skills__titles">
-                                <h3 class="skills__name">JavaScript</h3>
-                                <span class="skills_number">70%</span>
-                              </div>
-                              <div class="skills__bar">
-                                <span class="skills__percentage skills__js"></span>
-                              </div>
-                            </div>
+    <!-- Databases -->
+    <div class="skills__content" style="flex: 1 1 calc(50% - 2rem);">
+      <div class="skills__header" style="display: flex; justify-content: center; align-items: center; margin-bottom: 1rem;">
+        <i class="uil uil-database skills__icon"></i>
+        <div class="skills__title">Databases</div>
+      </div>
+      <div class="skills__logos" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 1.5rem;">
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <i class="devicon-postgresql-plain colored" style="font-size: 2.5rem;"></i>
+          <span>PostgreSQL</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <i class="devicon-microsoftsqlserver-plain colored" style="font-size: 2.5rem;"></i>
+          <span>MS SQL Server</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <i class="devicon-dynamodb-plain colored" style="font-size: 2.5rem;"></i>
+          <span>DynamoDB</span>
+        </div>
 
-                            <div class="skills__data">
-                              <div class="skills__titles">
-                                <h3 class="skills__name">React</h3>
-                                <span class="skills_number">50%</span>
-                              </div>
-                              <div class="skills__bar">
-                                <span class="skills__percentage skills__react"></span>
-                              </div>
-                            </div>
-                  </div>
-                </div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <i class="devicon-prisma-original colored" style="font-size: 2.5rem;"></i>
+          <span>Prisma</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <i class="devicon-redis-plain colored" style="font-size: 2.5rem;"></i>
+          <span>Redis</span>
+        </div>
+      </div>
+    </div>
 
+    <!-- Tools & Methodologies -->
+    <div class="skills__content" style="flex: 1 1 calc(50% - 2rem);">
+      <div class="skills__header" style="display: flex; justify-content: center; align-items: center; margin-bottom: 1rem;">
+        <i class="uil uil-wrench skills__icon"></i>
+        <div class="skills__title">Tools & Methods</div>
+      </div>
+      <div class="skills__logos" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 1.5rem;">
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <i class="devicon-vscode-plain colored" style="font-size: 2.5rem;"></i>
+          <span>VS Code</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <i class="devicon-visualstudio-plain colored" style="font-size: 2.5rem;"></i>
+          <span>Visual Studio</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <i class="devicon-jira-plain colored" style="font-size: 2.5rem;"></i>
+          <span>Jira</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <i class="devicon-git-plain colored" style="font-size: 2.5rem;"></i>
+          <span>Git</span>
+        </div>
+      </div>
+    </div>
 
-                           <!--=============== SKILLS 2 ===============-->
-            <div class="skills__content skills__close">
-              <div class="skills__header">
-                <div>
-                  <h1 class="skills__title"></h1>
-                  <span class="skills__subtitle"></span>
-                </div>
-              </div>
-
-              <div class="skills__list grid">
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name"></h3>
-                    <span class="skills__number"></span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__placeholder"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name"></h3>
-                    <span class="skills__number"></span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__placeholder"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name"></h3>
-                    <span class="skills__number"></span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__placeholder"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name"></h3>
-                    <span class="skills__number"></span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__placeholder"></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-                
-
-                 <!--==================== SKILLS 2 ====================-->
-                 <div class="skills__content skills__open">
-                  <div class="skills__header">
-                    <i class="uil uil-server-network skills__icon"></i>
-    
-                    <div>
-                      <h1 class="skills__title">Backend</h1>
-                    </div>
-    
-                    <i class="uil uil-angle-down skills__arrow"></i>
-                  </div>
-    
-                  <div class="skills__list grid">
-                    <div class="skills__data">
-                      <div class="skills__titles">
-                        <h3 class="skills__name">JavaScript (Node/Express)</h3>
-                        <span class="skills_number">85%</span>
-                      </div>
-                      <div class="skills__bar">
-                        <span class="skills__percentage skills__python"></span>
-                        </div>
-                      </div>
-    
-                          <div class="skills__data">
-                            <div class="skills__titles">
-                              <h3 class="skills__name">Python</h3>
-                              <span class="skills_number">80%</span>
-                            </div>
-    
-                            <div class="skills__bar">
-                              <span class="skills__percentage skills__aws"></span>
-                            </div>
-                          </div>
-    
-                          <div class="skills__data">
-                            <div class="skills__titles">
-                              <h3 class="skills__name">Java</h3>
-                              <span class="skills_number">70%</span>
-                            </div>
-    
-                            <div class="skills__bar">
-                              <span class="skills__percentage skills__terraform"></span>
-                            </div>
-                          </div>
-
-
-                                <div class="skills__data">
-                                  <div class="skills__titles">
-                                    <h3 class="skills__name">C# (.NET)</h3>
-                                    <span class="skills_number">50%</span>
-                                  </div>
-                                  <div class="skills__bar">
-                                    <span class="skills__percentage skills__expressjs"></span>
-                                  </div>
-                                </div>
-                      </div>
-                    </div>
-      </section>
-
+  </div>
+</section>
 
       <!--==================== Certifications ====================-->
       <section class="certifications section" id="certifications">
@@ -602,8 +642,17 @@
           <a href="https://www.credly.com/badges/ac32e394-42cb-434a-b426-ddae9a19a193/linked_in_profile" target="_blank">
             <img src="assets/img/solutionsarch.png" alt="AWS Certified Solutions Architect Associate" style="width: 200px; height: auto;">
           </a>
+  
+          <a href="https://www.credly.com/badges/ea9d74a8-9c62-4b69-804f-fb0d31aa9079/public_url" target="_blank">
+            <img src="assets/img/awsdva.png" alt="AWS Certified Developer Associate" style="width: 200px; height: auto;">
+          </a>
+
           <a href="https://www.credly.com/badges/3ec4c877-ac27-4291-b8fc-d578695e6c9c/linked_in_profile" target="_blank">
             <img src="assets/img/awsccp.png" alt="AWS Certified Cloud Practitioner" style="width: 200px; height: auto;">
+          </a>
+
+          <a href="https://learn.microsoft.com/api/credentials/share/en-us/LarryQLa-2612/CFF78117DEEA25B?sharingId" target="_blank">
+            <img src="assets/img/azure-fundamentals.png" alt="Microsoft Certified: Azure Fundamentals" style="width: 200px; height: auto;">
           </a>
         </div>
 
@@ -625,24 +674,48 @@
 
         <div class="portfolio__container container swiper-container">
           <div class="swiper-wrapper">
-            <!--=============== Project 1 ===============-->
+
+                          <!--=============== Project 2 ===============-->
             <div class="portfolio__content grid swiper-slide">
               <img
-                src="assets/img/CloudResume.png"
+                src="assets/img/bitmatch.png"
                 alt=""
                 class="portfolio__img"
               />
 
               <div class="portfolio__data">
-                <h3 class="portfolio__title">Cloud Personal Website</h3>
+                <h3 class="portfolio__title">BitMatch</h3>
                 <p class="portfolio__description">
-                  Explore my personal website, developed to take on the Cloud Resume Challenge, utilizing HTML/CSS/JS. Hosted on AWS S3, it leverages AWS Lambda functions for dynamic features, all orchestrated through a CI/CD pipeline powered by GitHub Actions. The underlying infrastructure is efficiently managed and scaled following infrastructure as a code principle using Terraform. 
+                  A web application platform designed to bridge the gap between innovators seeking project feedback and college students looking for hands-on experience. Many innovators struggle to promote their ideas, receive constructive input, and recruit talent, while students face challenges in finding meaningful projects to build skills and enhance their resumes.
                 </p>
                 <a
-                  href="https://github.com/larrylaa/Cloud-Portfolio-Website"
+                  href="https://bitmatchapp.com/"
                   class="button button--flex button--small portfolio__button"
                 >
-                Github Repository
+                Live Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!--=============== Project 3 ===============-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/Icebreak.jpg"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">CPP SEA Icebreak</h3>
+                <p class="portfolio__description">
+                  A platform for organizations to interact with their members. A central hub for members to be always updated on the latest events while providing features to incentivize member growth. As a member of Cal Poly Pomona's Software Engineering Association, I am currently stationed on the backend team of the project, working with ExpressJS, Prisma ORM, and PostgreSQL simulating an Agile SWE environment. 
+                </p>
+                <a
+                  href="https://github.com/cppsea/icebreak"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Github Repository
                   <i class="uil uil-arrow-right button__icon"></i>
                 </a>
               </div>
@@ -671,28 +744,29 @@
               </div>
             </div>
 
-            <!--=============== Project 3 ===============-->
+            <!--=============== Project 1 ===============-->
             <div class="portfolio__content grid swiper-slide">
               <img
-                src="assets/img/Icebreak.jpg"
+                src="assets/img/CloudResume.png"
                 alt=""
                 class="portfolio__img"
               />
 
               <div class="portfolio__data">
-                <h3 class="portfolio__title">CPP SEA Icebreak</h3>
+                <h3 class="portfolio__title">Cloud Personal Website</h3>
                 <p class="portfolio__description">
-                  A platform for organizations to interact with their members. A central hub for members to be always updated on the latest events while providing features to incentivize member growth. As a member of Cal Poly Pomona's Software Engineering Association, I am currently stationed on the backend team of the project, working with ExpressJS, Prisma ORM, and PostgreSQL simulating an Agile SWE environment. 
+                  Explore my personal website, developed to take on the Cloud Resume Challenge, utilizing HTML/CSS/JS. Hosted on AWS S3, it leverages AWS Lambda functions for dynamic features, all orchestrated through a CI/CD pipeline powered by GitHub Actions. The underlying infrastructure is efficiently managed and scaled following infrastructure as a code principle using Terraform. 
                 </p>
                 <a
-                  href="https://github.com/cppsea/icebreak"
+                  href="https://github.com/larrylaa/Cloud-Portfolio-Website"
                   class="button button--flex button--small portfolio__button"
                 >
-                  Github Repository
+                Github Repository
                   <i class="uil uil-arrow-right button__icon"></i>
                 </a>
               </div>
             </div>
+
           </div>
 
           <div class="swiper-button-next">
@@ -859,7 +933,7 @@
     const subtitleElement = document.querySelector('#typed-output');
     const cursorElement = document.querySelector('#typed-cursor');
     const typed = new Typed(subtitleElement, {
-      strings: ["Placeholder","Software Engineer", "DevOps Engineer", "Backend Web Developer"],
+      strings: ["Placeholder","Software Engineer", "Full-Stack Web Dev", "DevOps Engineer", "Cloud Engineer"],
       typeSpeed: 100,
       backSpeed: 100, 
       startDelay: 1000,
