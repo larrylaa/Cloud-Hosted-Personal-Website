@@ -1,45 +1,73 @@
-# Cloud-Hosted Personal Website 
-Welcome to my Cloud-Hosted Personal Website Project! This repository houses the code for my personal website, developed as part of the Cloud Resume Challenge. Through this project, I've utilized various cloud services and technologies to build an interactive and dynamic portfolio showcasing my skills, experience, and projects.
+# React + TypeScript + Vite
 
-## Live Website
-You can explore the live version of this portfolio website [here!](https://larryla.me/)
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Cloud Architecture Diagram
-![Cloud Resume Challenge Diagram](https://github.com/larrylaa/Cloud-Hosted-Personal-Website/assets/137100338/0c8baa46-2464-49cd-a8b5-dc43278d4f12)
+Currently, two official plugins are available:
 
-## Tech Stack
-- **Languages:**
-  - Javascript
-  - HTML/CSS
-- **AWS Services:**
-  - AWS Route 53: Website domain registration and DNS management.
-  - AWS Certificate Manager: Website SSL certificate provisioning and management.
-  - AWS CloudFront: Content delivery network for fast and secure website content delivery.
-  - AWS DynamoDB: NoSQL database for storing user visits to the website.
-  - AWS SES (Simple Email Service): For automatic emailing to my inbox triggered by website contact form submission.
-  - AWS Lambda (Python SDK; Boto3): Serverless functions written using the AWS Python SDK for emailing on form submission, incrementing, and fetching visits.
-  - AWS API Gateway: For creating, publishing, maintaining, monitoring, and securing REST APIs that trigger lambda functions.
-- **DevOps Tooling:**
-  - GitHub Actions: CI/CD pipelines for automating S3 deployments for the frontend.
-  - Terraform: Infrastructure as code for provisioning and managing AWS resources on the backend. (NOTE: IN PROGRESS)
-    
-## Credits
-This project was inspired by the Cloud Resume Challenge, an initiative created by [Forrest Brazeal](https://forrestbrazeal.com/) and documented at [cloudresumechallenge.dev](https://cloudresumechallenge.dev/). The challenge aims to help individuals demonstrate their cloud computing and DevOps skills through practical projects. I would like to extend my gratitude to Forrest Brazeal for creating this challenge and providing valuable resources to the community.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## License
-    Copyright [2024] [Larry La]
+## React Compiler
 
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-        http://www.apache.org/licenses/LICENSE-2.0
+## Expanding the ESLint configuration
 
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
+```js
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
 
+      // Remove tseslint.configs.recommended and replace with this
+      tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      tseslint.configs.stylisticTypeChecked,
 
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
+
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
+
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```

@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+/* Class-based dark mode for Tailwind v4 */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: hsl(215 69% 61%);
+  --color-primary-hover: hsl(215 57% 53%);
+  --color-primary-light: hsl(215 92% 85%);
+  --font-sans: "Poppins", sans-serif;
+}
+
+:root {
+  --bg-body: hsl(215 60% 99%);
+  --bg-card: #ffffff;
+  --bg-input: hsl(215 70% 96%);
+  --c-title: hsl(215 8% 15%);
+  --c-text: hsl(215 8% 45%);
+  --c-muted: hsl(215 8% 65%);
+  --scrollbar: hsl(215 12% 90%);
+  --scrollbar-thumb: hsl(215 12% 80%);
+  --cursor-x: -600px;
+  --cursor-y: -600px;
+}
+
+html.dark {
+  --bg-body: hsl(215 28% 12%);
+  --bg-card: hsl(215 29% 16%);
+  --bg-input: hsl(215 29% 16%);
+  --c-title: hsl(215 8% 95%);
+  --c-text: hsl(215 8% 75%);
+  --c-muted: hsl(215 8% 55%);
+  --scrollbar: hsl(215 12% 48%);
+  --scrollbar-thumb: hsl(215 12% 36%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-body);
+  color: var(--c-text);
+  font-family: "Poppins", sans-serif;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+  margin-bottom: 3.5rem;
+}
+
+@media (min-width: 768px) {
+  body {
+    margin-bottom: 0;
+    padding-top: 3.5rem;
+  }
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9998;
+  background: radial-gradient(
+    180px circle at var(--cursor-x) var(--cursor-y),
+    hsl(215 69% 61% / 0.03),
+    transparent 60%
+  );
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+::-webkit-scrollbar-track {
+  background: var(--scrollbar);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  border-radius: 0.5rem;
+}
+
+@keyframes mesh-drift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.hero-bg {
+  background: linear-gradient(
+    135deg,
+    hsl(215 28% 18%) 0%,
+    hsl(215 50% 28%) 35%,
+    hsl(215 60% 34%) 55%,
+    hsl(215 28% 18%) 100%
+  );
+  background-size: 200% 200%;
+  animation: mesh-drift 12s ease infinite;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  --swiper-navigation-sides-offset: 4px;
+  color: hsl(215 69% 61%) !important;
+  background: hsl(215 69% 61% / 0.12);
+  border-radius: 50%;
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: hsl(215 8% 65%);
+}
+.swiper-pagination-bullet-active {
+  background-color: hsl(215 69% 61%) !important;
+}
