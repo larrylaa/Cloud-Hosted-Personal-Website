@@ -1,6 +1,23 @@
 import { motion } from "framer-motion";
-import { Cloud } from "lucide-react";
+import {
+  Cloud,
+  Database,
+  FlaskConical,
+  LayoutGrid,
+  Server,
+  Wrench,
+  type LucideIcon,
+} from "lucide-react";
 import { skillGroups } from "../../data/skills";
+
+const categoryIcons: Record<string, LucideIcon> = {
+  Frontend: LayoutGrid,
+  Backend: Server,
+  Testing: FlaskConical,
+  "Cloud & DevOps": Cloud,
+  Databases: Database,
+  "Tools & Methods": Wrench,
+};
 
 export function Skills() {
   return (
@@ -22,7 +39,10 @@ export function Skills() {
         </motion.div>
 
         <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-5">
-          {skillGroups.map((group, gi) => (
+          {skillGroups.map((group, gi) => {
+            const CategoryIcon = categoryIcons[group.category] ?? Wrench;
+
+            return (
             <motion.div
               key={group.category}
               initial={{ opacity: 0, y: 10 }}
@@ -33,18 +53,7 @@ export function Skills() {
             >
               {/* Category header */}
               <div className="flex items-center gap-3 mb-5 pb-4 border-b border-primary/10">
-                {group.category === "Cloud & DevOps" ? (
-                  <Cloud
-                    size={28}
-                    className="text-primary"
-                    aria-hidden="true"
-                  />
-                ) : (
-                  <i
-                    className={`${group.categoryIcon} text-3xl`}
-                    aria-hidden="true"
-                  />
-                )}
+                <CategoryIcon size={28} className="text-primary" aria-hidden="true" />
                 <h3 className="font-semibold text-[var(--c-title)] text-base">
                   {group.category}
                 </h3>
@@ -92,7 +101,8 @@ export function Skills() {
                 ))}
               </div>
             </motion.div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
