@@ -1,13 +1,17 @@
-# Cloud-Hosted Personal Website 
+# Cloud-Hosted Personal Website
+
 Welcome to my Cloud-Hosted Personal Website Project! This repository houses the code for my personal website, developed as part of the Cloud Resume Challenge. Through this project, I've utilized various cloud services and technologies to build an interactive and dynamic portfolio showcasing my skills, experience, and projects.
 
 ## Live Website
+
 You can explore the live version of this portfolio website [here!](https://larryla.me/)
 
 ## Cloud Architecture Diagram
+
 ![Cloud Resume Challenge Diagram](https://github.com/larrylaa/Cloud-Hosted-Personal-Website/assets/137100338/0c8baa46-2464-49cd-a8b5-dc43278d4f12)
 
 ## Tech Stack
+
 - **Languages:**
   - Javascript
   - HTML/CSS
@@ -22,24 +26,7 @@ You can explore the live version of this portfolio website [here!](https://larry
 - **DevOps Tooling:**
   - GitHub Actions: CI/CD pipelines for automating S3 deployments for the frontend.
   - Terraform: Infrastructure as code for provisioning and managing AWS resources on the backend. (NOTE: IN PROGRESS)
-    
+
 ## Credits
+
 This project was inspired by the Cloud Resume Challenge, an initiative created by [Forrest Brazeal](https://forrestbrazeal.com/) and documented at [cloudresumechallenge.dev](https://cloudresumechallenge.dev/). The challenge aims to help individuals demonstrate their cloud computing and DevOps skills through practical projects. I would like to extend my gratitude to Forrest Brazeal for creating this challenge and providing valuable resources to the community.
-
-## License
-    Copyright [2024] [Larry La]
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-        http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
-
-
-
