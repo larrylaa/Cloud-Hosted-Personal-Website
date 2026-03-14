@@ -20,16 +20,23 @@ export const workExperience: ExperienceItem[] = [
     side: "left",
     badge: "SF",
     logo: "/assets/img/statefarm.png",
-    bullets: ["Resume bullets coming soon."],
+    bullets: [
+      "Built a self-service AWS resource request feature within an internal tooling portal using React, Lambda, API Gateway, and DynamoDB, enabling 500+ developers to submit, track, and approve provisioning requests.",
+      "Automated compliant provisioning for approved AWS resource requests via an SNS-triggered Lambda deploying pre-configured templates with Service Catalog and Terraform, cutting about 2 hours of manual setup per request.",
+      "Cut CI build times by 50% by migrating the internal tooling portal frontend from CRA to Vite, while adding unit tests for 26 utility functions using Vitest and integrating them into the GitLab CI pipeline for automated testing.",
+    ],
   },
   {
-    title: "Mobile & Web Applications Student Assistant",
-    subtitle: "Cal Poly Pomona IT · Remote",
+    title: "Web Development Intern",
+    subtitle: "Cal Poly Pomona · Pomona, CA",
     date: "Aug 2024 – May 2025",
     side: "right",
     badge: "CPP",
     logo: "/assets/img/calpolypomona.png",
-    bullets: ["Resume bullets coming soon."],
+    bullets: [
+      "Built and updated university websites serving 27,000+ students using Cascade CMS with HTML and CSS, ensuring accessibility compliance, and supported a new template migration through tutorials for maintainers.",
+      "Assisted in maintaining a SQL-based relational CRM database with 250,000+ student records by identifying and correcting inaccurate or corrupted information to ensure accuracy and integrity.",
+    ],
   },
   {
     title: "Software Engineer Intern",
@@ -38,7 +45,10 @@ export const workExperience: ExperienceItem[] = [
     side: "left",
     badge: "DI",
     logo: "/assets/img/desco.png",
-    bullets: ["Resume bullets coming soon."],
+    bullets: [
+      "Built an ETL pipeline with Access, VBA, and SQL to automate the processing of Japanese distributor sales data by importing, filtering, translating, and exporting it to Navision ERP, reducing processing time by 50%.",
+      "Refactored an employee password reset page in ASP to generate secure temporary passwords, enabling self-service resets on the Intranet for 250+ employees and reducing IT tickets for manual resets.",
+    ],
   },
   {
     title: "Software Engineer Intern",
@@ -52,11 +62,14 @@ export const workExperience: ExperienceItem[] = [
   {
     title: "Software Engineer Intern",
     subtitle: "Metal Toad · Remote",
-    date: "June 2023 – Sep 2023",
+    date: "June 2023 – Sept 2023",
     side: "left",
     badge: "MT",
     logo: "/assets/img/metaltoad.png",
-    bullets: ["Resume bullets coming soon."],
+    bullets: [
+      "Developed a Python REST API for a social media platform that automated awarding, activation, and deactivation of user achievement badges for 12,000+ users by leveraging AWS SDK to update JSON data in S3 buckets.",
+      "Spearheaded a unit testing initiative for a serverless backend with 50+ AWS Lambda functions, increasing reliability and test coverage to 72% by using PyTest and integrating pre-commit hooks into the development cycle.",
+    ],
   },
 ];
 
