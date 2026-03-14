@@ -87,34 +87,50 @@ function TimelineRow({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6, delay: index * 0.07 }}
-      className="grid grid-cols-[1fr_28px_1fr] items-start mb-0"
+      className="mb-4 md:mb-0"
     >
-      {/* Left slot */}
-      <div className={isLeft ? "pr-5" : ""}>
-        {isLeft && (
+      <div className="grid grid-cols-[28px_1fr] items-start md:hidden">
+        <div className="self-stretch flex flex-col items-center pt-3">
+          <div className="w-3 h-3 rounded-full bg-primary ring-4 ring-primary/20 shrink-0 z-10" />
+          {!isLast && <div className="w-px flex-1 -mb-3 bg-primary/30" />}
+        </div>
+        <div className="pl-4">
           <TimelineCard
             {...item}
             onOpen={() => onOpen(item)}
             clickable={clickable}
           />
-        )}
+        </div>
       </div>
 
-      {/* Center connector */}
-      <div className="self-stretch flex flex-col items-center pt-3">
-        <div className="w-3 h-3 rounded-full bg-primary ring-4 ring-primary/20 shrink-0 z-10" />
-        {!isLast && <div className="w-px flex-1 -mb-3 bg-primary/30" />}
-      </div>
+      <div className="hidden md:grid md:grid-cols-[1fr_28px_1fr] md:items-start">
+        {/* Left slot */}
+        <div className={isLeft ? "pr-5" : ""}>
+          {isLeft && (
+            <TimelineCard
+              {...item}
+              onOpen={() => onOpen(item)}
+              clickable={clickable}
+            />
+          )}
+        </div>
 
-      {/* Right slot */}
-      <div className={!isLeft ? "pl-5" : ""}>
-        {!isLeft && (
-          <TimelineCard
-            {...item}
-            onOpen={() => onOpen(item)}
-            clickable={clickable}
-          />
-        )}
+        {/* Center connector */}
+        <div className="self-stretch flex flex-col items-center pt-3">
+          <div className="w-3 h-3 rounded-full bg-primary ring-4 ring-primary/20 shrink-0 z-10" />
+          {!isLast && <div className="w-px flex-1 -mb-3 bg-primary/30" />}
+        </div>
+
+        {/* Right slot */}
+        <div className={!isLeft ? "pl-5" : ""}>
+          {!isLeft && (
+            <TimelineCard
+              {...item}
+              onOpen={() => onOpen(item)}
+              clickable={clickable}
+            />
+          )}
+        </div>
       </div>
     </motion.div>
   );

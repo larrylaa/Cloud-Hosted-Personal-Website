@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Cloud } from "lucide-react";
 import { skillGroups } from "../../data/skills";
 
 export function Skills() {
@@ -32,10 +33,18 @@ export function Skills() {
             >
               {/* Category header */}
               <div className="flex items-center gap-3 mb-5 pb-4 border-b border-primary/10">
-                <i
-                  className={`${group.categoryIcon} text-3xl`}
-                  aria-hidden="true"
-                />
+                {group.category === "Cloud & DevOps" ? (
+                  <Cloud
+                    size={28}
+                    className="text-primary"
+                    aria-hidden="true"
+                  />
+                ) : (
+                  <i
+                    className={`${group.categoryIcon} text-3xl`}
+                    aria-hidden="true"
+                  />
+                )}
                 <h3 className="font-semibold text-[var(--c-title)] text-base">
                   {group.category}
                 </h3>
