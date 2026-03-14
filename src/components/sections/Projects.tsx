@@ -9,7 +9,7 @@ import { projects } from "../../data/projects";
 
 export function Projects() {
   return (
-    <section id="projects" className="py-32">
+    <section id="projects" className="py-32 section-soft">
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
@@ -62,6 +62,22 @@ export function Projects() {
                   <h3 className="text-xl font-semibold text-[var(--c-title)] mb-3">
                     {project.title}
                   </h3>
+
+                  <div className="flex flex-wrap gap-2 mb-3">
+                    {project.stack.map((tech) => (
+                      <span
+                        key={tech}
+                        className="text-[10px] font-semibold tracking-wide uppercase px-2.5 py-1 rounded-full bg-primary/10 text-primary border border-primary/20"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+
+                  <p className="text-[11px] font-medium text-[var(--c-muted)] mb-3">
+                    {project.impact}
+                  </p>
+
                   <p className="text-[var(--c-text)] text-sm leading-relaxed mb-7">
                     {project.description}
                   </p>

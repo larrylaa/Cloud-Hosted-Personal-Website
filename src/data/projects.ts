@@ -8,6 +8,9 @@ export const projects: Project[] = [
     image: "/assets/img/bitmatch.png",
     link: "https://bitmatchapp.com/",
     linkLabel: "Live Demo",
+    stack: ["React", "TypeScript", "Node.js", "PostgreSQL"],
+    impact:
+      "Built to connect innovators with student contributors for real feedback loops.",
   },
   {
     title: "CPP SEA Icebreak",
@@ -16,6 +19,9 @@ export const projects: Project[] = [
     image: "/assets/img/Icebreak.jpg",
     link: "https://github.com/cppsea/icebreak",
     linkLabel: "GitHub Repository",
+    stack: ["Express", "Prisma", "PostgreSQL", "Agile"],
+    impact:
+      "Shipped backend features for an active student org platform with team workflows.",
   },
   {
     title: "GradLink",
@@ -24,6 +30,9 @@ export const projects: Project[] = [
     image: "/assets/img/GradLink.svg",
     link: "https://github.com/larrylaa/GradLink-Forums",
     linkLabel: "GitHub Repository",
+    stack: ["React", "Node.js", "MongoDB", "REST API"],
+    impact:
+      "Lowered barriers for first-gen applicants through mentor-led college guidance.",
   },
   {
     title: "Cloud Personal Website",
@@ -32,5 +41,8 @@ export const projects: Project[] = [
     image: "/assets/img/CloudResume.png",
     link: "https://github.com/larrylaa/Cloud-Portfolio-Website",
     linkLabel: "GitHub Repository",
+    stack: ["AWS", "Lambda", "Terraform", "GitHub Actions"],
+    impact:
+      "Automated cloud deployment and dynamic portfolio features with serverless architecture.",
   },
 ];

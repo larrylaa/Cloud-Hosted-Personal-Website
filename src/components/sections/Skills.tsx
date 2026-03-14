@@ -3,7 +3,7 @@ import { skillGroups } from "../../data/skills";
 
 export function Skills() {
   return (
-    <section id="skills" className="py-32">
+    <section id="skills" className="py-32 section-soft">
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
@@ -56,13 +56,19 @@ export function Skills() {
                     className="flex flex-col items-center gap-1.5"
                   >
                     {skill.name === "AWS SAM" ? (
-                      <span
-                        className="w-10 h-10 rounded-xl bg-primary/12 border border-primary/30 text-primary text-[11px] font-semibold flex items-center justify-center transition-transform duration-300 hover:scale-105 hover:-translate-y-0.5"
+                      <img
+                        src="/assets/img/sam.png"
+                        alt="AWS SAM"
+                        className="text-4xl w-10 h-10 object-contain transition-transform duration-300 hover:scale-105 hover:-translate-y-0.5"
                         title={skill.name}
-                        aria-label={skill.name}
-                      >
-                        SAM
-                      </span>
+                      />
+                    ) : skill.name === "GitHub Copilot" ? (
+                      <img
+                        src="/assets/img/copilot.png"
+                        alt="GitHub Copilot"
+                        className="text-4xl w-10 h-10 object-contain transition-transform duration-300 hover:scale-105 hover:-translate-y-0.5"
+                        title={skill.name}
+                      />
                     ) : (
                       <i
                         className={`${skill.icon} text-4xl transition-transform duration-300 hover:scale-105 hover:-translate-y-0.5`}

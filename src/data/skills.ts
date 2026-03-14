@@ -66,6 +66,7 @@ export const skillGroups: SkillGroup[] = [
       { name: "Visual Studio", icon: "devicon-visualstudio-plain colored" },
       { name: "Jira", icon: "devicon-jira-plain colored" },
       { name: "Git", icon: "devicon-git-plain colored" },
+      { name: "GitHub Copilot", icon: "devicon-github-original" },
     ],
   },
 ];

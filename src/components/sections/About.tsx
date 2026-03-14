@@ -1,9 +1,15 @@
 import { motion } from "framer-motion";
 import { Download } from "lucide-react";
 
+const aboutStats = [
+  { label: "Experiences", value: "6" },
+  { label: "Certifications", value: "5" },
+  { label: "Focus", value: "Full-Stack + Cloud" },
+];
+
 export function About() {
   return (
-    <section id="about" className="py-32">
+    <section id="about" className="py-32 section-soft">
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
@@ -42,11 +48,27 @@ export function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.75, delay: 0.1 }}
           >
+            <div className="grid sm:grid-cols-3 gap-3 mb-7">
+              {aboutStats.map((stat) => (
+                <div
+                  key={stat.label}
+                  className="rounded-xl border border-primary/15 bg-[var(--bg-card)]/75 px-3 py-2"
+                >
+                  <p className="text-xs text-[var(--c-muted)] leading-none mb-1">
+                    {stat.label}
+                  </p>
+                  <p className="text-sm font-semibold text-[var(--c-title)] leading-none">
+                    {stat.value}
+                  </p>
+                </div>
+              ))}
+            </div>
+
             <p className="text-[var(--c-text)] leading-[1.4] mb-8 text-sm md:text-base">
-              I'm a motivated college junior pursuing a Computer Science degree,
-              backed by multiple internship experiences in software engineering
-              and information technology. I have a strong interest in cloud
-              technologies and have gained knowledge of AWS through internships,
+              I'm a motivated college Senior pursuing a Computer Science degree,
+              backed by multiple internship experiences in software engineering.
+              I have a strong interest in cloud technologies and have gained
+              deep knowledge of AWS, Azure, and GCP through internships,
               personal projects, and certifications.
               <br />
               <br />

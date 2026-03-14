@@ -11,6 +11,8 @@
 }
 
 :root {
+  --first-color: hsl(215 69% 61%);
+  --section-soft: hsl(215 55% 97% / 0.7);
   --bg-body: hsl(215 60% 99%);
   --bg-card: #ffffff;
   --bg-input: hsl(215 70% 96%);
@@ -24,6 +26,8 @@
 }
 
 html.dark {
+  --first-color: hsl(215 69% 61%);
+  --section-soft: hsl(215 24% 16% / 0.7);
   --bg-body: hsl(215 28% 12%);
   --bg-card: hsl(215 29% 16%);
   --bg-input: hsl(215 29% 16%);
@@ -99,6 +103,16 @@ body::before {
   );
   background-size: 200% 200%;
   animation: mesh-drift 12s ease infinite;
+}
+
+.section-soft {
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    var(--section-soft) 18%,
+    var(--section-soft) 82%,
+    transparent 100%
+  );
 }
 
 .swiper-button-next::after,

@@ -3,6 +3,9 @@ export interface ExperienceItem {
   subtitle: string;
   date: string;
   side: "left" | "right";
+  badge?: string;
+  logo?: string;
+  bullets?: string[];
 }
 
 export interface SkillItem {
@@ -22,6 +25,8 @@ export interface Project {
   image: string;
   link: string;
   linkLabel: string;
+  stack: string[];
+  impact: string;
 }
 
 export interface Certification {

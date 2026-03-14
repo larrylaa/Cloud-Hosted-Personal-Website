@@ -20,7 +20,7 @@ export function Certifications() {
           </span>
         </motion.div>
 
-        <div className="flex flex-wrap justify-center gap-6">
+        <div className="flex flex-wrap lg:flex-nowrap justify-center gap-4 pb-2">
           {certifications.map((cert, i) => (
             <motion.a
               key={cert.name}
@@ -31,14 +31,14 @@ export function Certifications() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.55, delay: i * 0.1 }}
-              className="group relative backdrop-blur-sm bg-[var(--bg-card)]/80 border border-primary/10 hover:border-primary/40 rounded-2xl p-6 shadow-lg shadow-black/5 hover:shadow-primary/20 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center w-52 h-52"
+              className="group relative shrink-0 backdrop-blur-sm bg-[var(--bg-card)]/80 border border-primary/10 hover:border-primary/40 rounded-2xl p-5 shadow-lg shadow-black/5 hover:shadow-primary/20 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center w-48 h-48"
             >
               {/* Glow on hover */}
               <div className="absolute inset-0 rounded-2xl bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <img
                 src={cert.image}
                 alt={cert.name}
-                className="relative w-38 h-auto object-contain transition-transform duration-300 group-hover:scale-[1.03]"
+                className="relative w-full h-full object-contain p-1 transition-transform duration-300 group-hover:scale-[1.03]"
               />
             </motion.a>
           ))}
