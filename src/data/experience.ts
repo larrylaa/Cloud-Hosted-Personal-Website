@@ -90,7 +90,7 @@ export const education: ExperienceItem[] = [
     date: "Feb 2024 – Apr 2025",
     side: "right",
     badge: "CP",
-    logo: "/assets/img/codepath.jpg",
+    logo: "/assets/img/codepath.png",
   },
   {
     title: "High School Diploma",
@@ -98,6 +98,6 @@ export const education: ExperienceItem[] = [
     date: "Aug 2019 – June 2023",
     side: "right",
     badge: "RHS",
-    logo: "/assets/img/rosemead.jpg",
+    logo: "/assets/img/rosemead.png",
   },
 ];
