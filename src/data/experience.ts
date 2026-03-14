@@ -9,8 +9,7 @@ export const workExperience: ExperienceItem[] = [
     badge: "OCI",
     logo: "/assets/img/orace.png",
     bullets: [
-      "Working on cloud platform intern projects and production-grade engineering workflows.",
-      "Contributing to services and tooling with focus on reliability, testability, and developer experience.",
+      "Incoming Summer 2026 intern; team and project assignment are still pending.",
     ],
   },
   {
@@ -57,7 +56,10 @@ export const workExperience: ExperienceItem[] = [
     side: "right",
     badge: "DFG",
     logo: "/assets/img/dfg.png",
-    bullets: ["Resume bullets coming soon."],
+    bullets: [
+      "Gathered client requirements and feedback for the 3D Girls Link Up App administrative panel implementation.",
+      "Collaborated with a team of 6 developers, delegating and managing tasks to ensure timely and effective project progression.",
+    ],
   },
   {
     title: "Software Engineer Intern",
